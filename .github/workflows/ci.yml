@@ -26,12 +26,12 @@ jobs:
 
     - name: Lint with flake8
       run: |
-        flake8 .
+        flake8 main.py tests
 
     - name: Check formatting with black
       run: |
-        black --check .
+        black --check main.py tests
 
     - name: Run tests with coverage
       run: |
-        pytest --cov=src --cov-report=term-missing
+        pytest --cov=main --cov-report=term-missing
