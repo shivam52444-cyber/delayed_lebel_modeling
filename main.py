@@ -1,5 +1,5 @@
 print("hello world ")
 
 
-def test_basic_math():
-    assert 2 + 2 == 4
+def add(a,b):
+    return a+b
